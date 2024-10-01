@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Request From</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .form-row {
+            align-items: center;
+        }
+
+        .submit-btn {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h4>New Request Form</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="packageName" class="col-sm-4 col-form-label">
+                            <i class="fas fa-box icon"></i>Package Name:
+                        </label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="packageName" placeholder="Enter package name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="applicationOwner" class="col-sm-4 col-form-label">
+                            <i class="fas fa-user icon"></i>Application Owner 521 ID:
+                        </label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="applicationOwner" placeholder="Enter application owner ID">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="applicationManager" class="col-sm-4 col-form-label">
+                            <i class="fas fa-user-tie icon"></i>Application Manager 521 ID:
+                        </label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="applicationManager" placeholder="Enter application manager ID">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="sccmSPOCName" class="col-sm-4 col-form-label">
+                            <i class="fas fa-user-shield icon"></i>SCCM SPOC Name:
+                        </label>
+                        <div class="col-sm-8">
+                            <select class="form-select" id="sccmSPOCName">
+                                <option value="">Select SPOC Name</option>
+                                <option value="spoc1">SPOC 1</option>
+                                <option value="spoc2">SPOC 2</option>
+                                <option value="spoc3">SPOC 3</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="globalPilot" class="col-sm-4 col-form-label">
+                            <i class="fas fa-globe icon"></i>Global Pilot:
+                        </label>
+                        <div class="col-sm-8">
+                            <select class="form-select" id="globalPilot">
+                                <option value="">Select Yes or No</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="submit-btn mt-3">
+                        <button type="submit" class="btn btn-dark">
+                            <i class="fas fa-paper-plane icon"></i>Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* Black Background for Navbar */
+.bg-black {
+    background-color: #000; /* Solid black background */
+    color: white; /* White text color for contrast */
+}
+
+/* Navbar Items Styling */
+.navbar-nav .nav-link {
+    color: white; /* Default text color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    /* Hover Effects for Navbar Items */
+    .navbar-nav .nav-link:hover {
+        color: #ccc; /* Light gray on hover */
+        transform: scale(1.05); /* Slightly increase size */
+    }
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+    border: none; /* Remove border for a cleaner look */
+    color: white; /* Toggler icon color */
+    transition: transform 0.3s ease;
+}
+
+    .navbar-toggler:focus {
+        outline: none; /* Remove focus outline */
+    }
+
+/* Collapsible Navbar */
+.navbar-collapse {
+    transition: max-height 0.5s ease;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    color: #ccc; /* Different color for active link */
+}
